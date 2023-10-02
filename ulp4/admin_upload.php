@@ -248,6 +248,8 @@
                                 $alur = $row['alur'];
                                 $kuitansi = $row['kuitansi'];
                                 $invoice = $row['invoice'];
+                                $faktur = $row['faktur_pajak'];
+                                $dispo = $row['disposisi'];
                                                 
                                 $_SESSION['id'] = $id2;           
                         ?>
@@ -275,10 +277,14 @@
                             <td style="font-size: 10pt; background-color:white; min-width: 115px; opacity:0.8; color:black"> 
                                 <br>
                                 <a style="background-color:red; color:white; padding:10px; border-radius:20px; margin-top:30px;" href="admin_edit_invoice.php?id=<?php echo $row['id']; ?>"> Edit Invoice </a>
+                                <br>
+                                <div class="" style="margin-top:30px; font-weight:bold; font-size:12pt"> <?php echo $invoice ?> </div>
                             </td>
                             <td style="font-size: 10pt; background-color:white; min-width: 145px; opacity:0.8; color:black"> 
                                 <br>
                                 <a style="background-color:red; color:white; padding:10px; border-radius:20px; margin-top:30px;" href="admin_edit_pajak.php?id=<?php echo $row['id']; ?>"> Edit Faktur Pajak </a>
+                                <br>
+                                <div class="" style="margin-top:30px; font-weight:bold; font-size:12pt"> <?php echo $faktur ?> </div>
                             </td>
                             <td style="font-size: 10pt; background-color:white; opacity:0.8; color:black"> 
                                 <br>
